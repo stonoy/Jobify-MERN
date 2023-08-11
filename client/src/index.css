@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.active {
+  color: blueviolet;
+}
+
+.showBigSideBar {
+  display: block;
+}
+
+.hideBigSideBar {
+  display: none;
+}
+
+/* .showBigSideBar,
+.hideBigSideBar {
+  @media (max-width: 768px) {
+    display: none;
+  }
+} */
+
+.showSmallSideBar {
+  display: block;
+}
+
+.hideSmallSideBar {
+  display: none;
+}
+
+/* .showSmallSideBar,
+.hideSmallSideBar {
+  @media (min-width: 768px) {
+    display: none;
+  }
+} */
