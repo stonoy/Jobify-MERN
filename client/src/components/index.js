@@ -7,6 +7,7 @@ import SearchContainer from "./SearchContainer";
 import JobsContainer from "./jobsContainer";
 import FormSelect from "./FormSelect";
 import Stats from "./Stats";
+import PageContainer from "./PageContainer";
 
 export {
   BigSideBar,
@@ -17,4 +18,5 @@ export {
   SearchContainer,
   FormSelect,
   Stats,
+  PageContainer,
 };

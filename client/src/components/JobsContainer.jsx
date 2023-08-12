@@ -1,24 +1,26 @@
 import React from "react";
 import Job from "./Job";
 import { AllJobValues } from "../pages/AllJob";
+import PageContainer from "./PageContainer";
 
 const JobsContainer = () => {
   const {
-    data: { jobs, numOfJobs },
+    data: { jobs, totalJobs, totalPages, currentPage },
   } = AllJobValues();
-  
-  if (numOfJobs === 0) {
+
+  if (totalJobs === 0) {
     return <h3>No jobs to display</h3>;
   }
 
   return (
     <div>
       <h3>
-        There are {numOfJobs} job{numOfJobs > 1 ? "s" : ""}
+        There are {totalJobs} job{totalJobs > 1 ? "s" : ""}
       </h3>
       {jobs.map((job) => (
         <Job key={job._id} {...job} />
       ))}
+      {totalPages > 1 && <PageContainer />}
     </div>
   );
 };
